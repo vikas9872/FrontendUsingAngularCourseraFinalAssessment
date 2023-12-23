@@ -1,0 +1,13 @@
+
+.nav-item a{
+    color: #000;
+}
+.nav-item a:hover{
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}

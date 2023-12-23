@@ -1,0 +1,31 @@
+<div class="tablebooking">
+    <h1>Table Booking</h1>
+    <div class="formPart">
+        <div class="togglemessagecontainer">
+            <p *ngIf="messageValue" class="togglemessageclass">
+                Table is booked for you!!!
+            </p>
+        </div>
+        <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+            <label for="firstName" class="form-label">First Name:</label>
+            <div>
+              <input type="text" name="firstName" id="firstNameid" class="form-control">
+            </div>
+            <label for="lastName" class="form-label">Last Name:</label>
+            <div>
+                <input type="text" name="lastName" id="lastNameid" class="form-control">
+            </div>
+            <label for="emailname" class="form-label">E-mail:</label>
+            <div>
+                <input type="email" name="emailname" id="emailid" class="form-control">
+            </div>
+            <label for="tableNumber" class="form-label">Table Number:</label>
+            <div>
+                <input type="number"  name="tableNumber" id="tableNumberid" class="form-control">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
